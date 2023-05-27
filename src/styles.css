@@ -364,3 +364,11 @@ footer {
     align-items: center;
   }
 }
+
+.footer-link {
+  color: var(--secondary-color);
+}
+
+.footer-link:hover {
+  color: var(--text-color);
+}
