@@ -363,6 +363,24 @@ footer {
     justify-content: center;
     align-items: center;
   }
+  .about-content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    color: var(--text-color);
+  }
+  .about-content li {
+    width: 100%;
+    color: var(--text-color);
+  }
+  p,
+  ul {
+    color: var(--text-color);
+  }
+
+  p {
+    text-align: left;
+  }
 }
 
 .footer-link {
@@ -370,5 +388,53 @@ footer {
 }
 
 .footer-link:hover {
+  color: var(--text-color);
+}
+
+.text-left {
+  margin-left: 50px;
+}
+
+.container-about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+hr {
+  color: var(--secondary-color);
+}
+
+.subtitles {
+  color: var(--secondary-color);
+  text-decoration: underline;
+}
+
+#ul-about {
+  list-style-type: none;
+}
+
+.col {
+  color: var(--text-color);
+}
+
+p {
+  color: var(--text-color);
+}
+
+ul {
+  color: var(--text-color);
+}
+
+#contact-me-main {
+  margin-top: 100px;
+}
+
+#about-main {
+  margin-top: 50px;
+}
+
+h5 {
   color: var(--text-color);
 }
