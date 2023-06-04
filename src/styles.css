@@ -373,6 +373,17 @@ footer {
     width: 100%;
     color: var(--text-color);
   }
+
+  .writing-content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    color: var(--text-color);
+  }
+  .writing-content li {
+    width: 100%;
+    color: var(--text-color);
+  }
   p,
   ul {
     color: var(--text-color);
@@ -415,6 +426,9 @@ hr {
   list-style-type: none;
 }
 
+.writing-description {
+  list-style-type: none;
+}
 .col {
   color: var(--text-color);
 }
@@ -436,5 +450,13 @@ ul {
 }
 
 h5 {
+  color: var(--text-color);
+}
+
+a {
+  color: var(--secondary-color);
+}
+
+a:hover {
   color: var(--text-color);
 }
