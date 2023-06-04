@@ -22,7 +22,7 @@ body {
       rgba(19, 117, 30, 0.73),
       rgba(154, 154, 158, 0.334)
     ),
-    url("/coding.jpg");
+    url("/images/coding.jpg");
   width: 50%;
   height: 250px;
   background-size: cover;
@@ -37,7 +37,7 @@ body {
       rgba(19, 117, 30, 0.73),
       rgba(154, 154, 158, 0.334)
     ),
-    url("/writing.jpg");
+    url("/images/writing.jpg");
   width: 50%;
   height: 250px;
   background-size: cover;
@@ -298,7 +298,10 @@ footer {
     text-align: center;
   }
 
-  #photo-main {
+  #photo-main,
+  #img-home,
+  #img-home-2,
+  .services-description {
     display: none;
   }
 
@@ -337,7 +340,7 @@ footer {
         rgba(19, 117, 30, 0.73),
         rgba(154, 154, 158, 0.334)
       ),
-      url("/coding.jpg");
+      url("/images/coding.jpg");
     width: 100%;
     height: 150px;
     background-size: cover;
@@ -353,7 +356,7 @@ footer {
         rgba(19, 117, 30, 0.73),
         rgba(154, 154, 158, 0.334)
       ),
-      url("/writing.jpg");
+      url("/images/writing.jpg");
     width: 100%;
     height: 150px;
     background-size: cover;
@@ -459,4 +462,130 @@ a {
 
 a:hover {
   color: var(--text-color);
+}
+
+#img-home,
+#img-home-2 {
+  width: 75%;
+  height: 300px;
+}
+
+@media (max-width: 912px) {
+  #hero-main {
+    margin-top: 10px;
+  }
+  .services-description {
+    display: none;
+  }
+  h1 {
+    font-size: 40px;
+    line-height: 1.5;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  h5 {
+    font-size: 15px;
+  }
+
+  h6 {
+    font-size: 12px;
+  }
+
+  p {
+    text-align: center;
+  }
+
+  #buttons-main {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .button {
+    position: relative;
+    z-index: 0;
+    width: 120px;
+    height: 26px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--secondary-color);
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    margin: 2px 5px 2px 5px;
+  }
+
+  #buttons-services {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  #show_bg_coding {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(19, 117, 30, 0.73),
+        rgba(154, 154, 158, 0.334)
+      ),
+      url("/images/coding.jpg");
+    width: 50%;
+    height: 150px;
+    background-size: cover;
+    color: white;
+    padding: 10px;
+    border: white solid 1px;
+    justify-content: center;
+    align-items: center;
+  }
+  #show_bg_writing {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(19, 117, 30, 0.73),
+        rgba(154, 154, 158, 0.334)
+      ),
+      url("/images/writing.jpg");
+    width: 50%;
+    height: 150px;
+    background-size: cover;
+    color: white;
+    padding: 10px;
+    border: white solid 1px;
+    justify-content: center;
+    align-items: center;
+  }
+  .about-content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    color: var(--text-color);
+  }
+  .about-content li {
+    width: 100%;
+    color: var(--text-color);
+  }
+
+  .writing-content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    color: var(--text-color);
+  }
+  .writing-content li {
+    width: 100%;
+    color: var(--text-color);
+  }
+  p,
+  ul {
+    color: var(--text-color);
+  }
+
+  p {
+    text-align: left;
+  }
 }
